@@ -8,6 +8,8 @@ import SettingsDashboard from '../../features/user/Settings/SettingsDashboard';
 import UserDetailedPage from '../../features/user/UserDetailed/UserDetailedPage';
 import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard';
 import DocumentsDashboard from '../../features/user/DocumentsDashboard/DocumentsDashboard';
+import AboutDashboard from '../../features/user/TeamDashboard/AboutDashboard';
+import TeamDashboard from '../../features/user/TeamDashboard/TeamDashboard';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage';
 import HomePage from '../../features/home/HomePage';
 import ModalManager from '../../features/modals/ModalManager';
@@ -33,6 +35,8 @@ class App extends Component {
                   <Route path="/manage/:id" component={EventForm} />
                   <Route path="/people" component={PeopleDashboard} />
                   <Route path="/documents" component={DocumentsDashboard} />
+                  <Route path="/about" component={AboutDashboard} />
+                  <Route path="/team" component={TeamDashboard} />
                   <Route path="/profile/:id" component={UserDetailedPage} />
                   <Route path="/settings" component={SettingsDashboard} />
                   <Route path="/createEvent" component={EventForm} />

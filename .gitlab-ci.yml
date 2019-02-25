@@ -1,0 +1,15 @@
+image: node:10.15
+cache:
+  key: project
+  paths: 
+  - node_modules/
+stages:
+  - build
+before_script:
+  -npm install
+Pages:
+  stage: build
+  script: npm run-script build
+artifacts:
+  paths:
+  -build

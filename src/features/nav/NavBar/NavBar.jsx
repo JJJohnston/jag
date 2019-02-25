@@ -38,14 +38,28 @@ class NavBar extends Component {
       <Menu inverted fixed="top">
         <Container>
           <Menu.Item as={Link} to="/" header>
-            <img src="/assets/logo.png" alt="logo" />
+            <img src="/assets/jagLogo.png" alt="logo" width="30" height="35"/>
             JAG
           </Menu.Item>
-          <Menu.Item as={NavLink} to="/events" name="Tasks" />
+          <Menu.Item as={NavLink} to="/about" name="About">
+          <img src="/assets/aboutLogo.png" alt="aboutlogo" width="30" height="35" />
+          About Us
+          </Menu.Item>
+          <Menu.Item as={NavLink} to="/team" name="Team">
+          <img src="/assets/teamLogo.png" alt="teamlogo" width="30" height="35" />
+          Team
+          </Menu.Item>
+          <Menu.Item as={NavLink} to="/events" name="Tasks">
+          <img src="/assets/taskLogo.png" alt="tasklogo" width="30" height="35" />
+          Tasks
+          </Menu.Item>
           {authenticated &&
           <Menu.Item as={NavLink} to="/people" name="People" /> }
           {authenticated &&
-          <Menu.Item as={NavLink} to="/documents" name="Documents" /> }
+          <Menu.Item as={NavLink} to="/documents" name="Documents">
+           <img src="/assets/docuLogo.png" alt="doculogo" width="30" height="35" />
+          Documents
+          </Menu.Item>}
 
           {authenticated &&
           <Menu.Item>
